@@ -26,7 +26,10 @@ sonarqube {
 
 jacocoTestReport {
     reports {
-        xml.enabled true
+        xml.required = true 
+        html.required = true
+        // xml.displayName = "TestCoverage"
+        // xml.enabled true
     }
 }
 test.finalizedBy jacocoTestReport
